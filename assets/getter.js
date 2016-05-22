@@ -151,7 +151,6 @@ $(document).ready(function() {
 				document.getElementById("postedlist").innerHTML += postedingredients;
 				document.getElementById("recipelist").innerHTML += parseddata;
 				modalobject.style.display = "block";
-				spinner.stop();
 			});
 		}
 	});
