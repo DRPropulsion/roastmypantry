@@ -1,0 +1,321 @@
+@font-face {
+	font-family:bariol;
+	src:url(fonts/bariol_regular-webfont.ttf); }
+
+@font-face {
+	font-family:script;
+	src:url(fonts/Arizonia-Regular.ttf); }
+	
+@font-face {
+	font-family:lato;
+	src:url(fonts/Lato-Regular.ttf); }
+	
+@font-face {
+	font-family:lato-light;
+	src:url(fonts/Lato-Light.ttf); }
+
+html, body {
+height:auto;
+width:auto; 
+margin: 0;
+padding: 0;
+}
+
+header {
+	justify-content: center;
+	font-size: 75px;
+	margin-bottom: 0;
+	margin-top: 1%;
+	font-family: lato-light;
+	color: white;
+	padding-bottom: 1%
+}
+.padded {
+	padding-top: 20%;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%
+	}
+	
+.holddiv {
+
+}
+	
+.textbox {
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: #E8E8E8;
+	padding-top: 0.5%;
+	width: 40%;
+	max-width: inherit;
+	color: gray;
+	font-size: 40px;
+	font-family: lato;
+	margin-left: 0%;
+	padding-left: 0.5%;
+	
+}
+
+div {
+	clear: none;
+}
+
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+    color: white;
+	font-family:lato;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+	margin-top: 0.5%;
+}
+
+
+button:hover {
+	background-color: #3B873F;
+}
+
+.clearer {
+	background-color: gray;
+	/* hover covered through scripting; css fails*/
+}
+
+ul {
+	list-style-type: none;
+	color: white;
+	font-size: 35px;
+	margin-left: 2.5%;
+}
+
+li {
+	margin-bottom: 0.5%;
+	margin-top: 1%;
+	margin-right: 5.5%;
+}
+
+.libg {
+	border: solid 2px wheat;
+	border-radius: 5px;
+}
+
+.error {
+	font-family: lato;
+	color: black;
+	font-size: 25px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#recipelist {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+p {
+	font-family: lato;
+	font-size: 40px;
+	color: gray;
+}
+	
+body {
+	font-family: lato;
+	font-size: 16px;
+	line-height: 1;
+	color: black;
+	text-align: center;
+	justify-content: center; 
+	/*background-image: url(bg.jpg); 
+	background-attachment:fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;*/
+	
+}
+
+html {
+	background: url(bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    padding-bottom: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: scroll; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+	height: calc(100% - 70px);
+	overflow-y: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    font-family: lato;
+	font-weight: 900px;
+	color: white;
+    float: right;
+	position: fixed;
+	right:19%;
+    font-size: 30px;
+    font-weight: bold;
+	margin-right: 0.1%;
+	margin-top: 0;
+
+}
+
+.close:hover,
+.close:focus {
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.recipe {
+	width: 100%;
+	margin-left: 2%;
+	margin-right: -2%;
+	border: 2px solid #7F8C8D;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-radius: 5px;
+	justify-content: center;
+	width: 96%;
+	background-color: #95A5A6;
+	margin-bottom: 2%;
+	text-align: left;
+}
+
+
+.recipe h1 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	color: black;
+	font-family: bariol;
+	font-size: 40px;
+	text-align: left;
+	width: auto;
+	line-height: 120%;
+	margin-top: -20px;
+	margin-bottom: 0px;
+	margin-right: 2%;
+	
+}
+
+
+.recipe h2 {
+	color: #2C3E50;
+	font-family: bariol;
+	font-size: 27px;
+	text-align: left;
+	margin-top: 0px;
+}
+
+.recipe h3 {
+	color: #34495E;
+	font-family: lato-light;
+	font-size: 25px;
+	text-align: left;	
+	display: inline;
+}
+
+.recipeh2 a:link{
+	color: #2C3E50;
+	text-decoration: none;
+}
+
+
+.recipeh1 a:link {
+	color: black;
+	text-decoration: none;
+}
+.recipe a:hover {
+	color: #BDC3C7;
+	/*text-decoration: underline;*/
+	
+}
+
+.recipe img {
+	/*width: 150px;*/
+	height: 180px;
+	float: left;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 5px;
+}
+
+.rank {
+	border-radius: 5px;
+	background-color: #7F8C8D;
+	color: #FFD700;
+}
+
+.pun {
+	font-family: bariol;
+	color: black;
+	font-size: 20px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Roast My Pantry</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen">
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+		<!--<script src="http://spin.js.org/spin.min.js"></script>-->
+		<script src="assets/getter.js"></script>
+		<link rel="icon" type="image/png" href="assets/icon.png"/>
+		
+	</head>
+	<body>		
+		<div id="recipeModal" class="modal">
+			<div class="modal-content">
+				<!--<p> hello this is a test </p>-->
+				<span class="close" onclick="closeResults()">X</span>
+				<p id="postedlist"></p>
+				<ul id="recipelist"></ul>
+			</div>
+		</div>
+	
+	
+		<div class="padded">
+			<div class="holddiv">
+				<header>What's in your pantry today?</header>
+				
+				<div>
+					<input id="inputBox" class="textbox" name="ingredBox" onkeydown="checkForEnter()"/>
+				</div>
+				
+				<button class="searcher" id="searchbutton" >Let's Get Cooking!</button>
+				<button class="clearer" id="clearbutton" onclick="clearList()">Clear My Countertop</button>
+
+				<div>
+					<ul id="list"></ul>
+				</div> 
+			</div>
+		</div>
+		
+			
+		
+		
+		<script>
+			//Opens the modal
+			function showResults() {
+				modal.style.display = "block";
+			}
+			//Closes the modal
+			function closeResults() {
+				modal.style.display = "none";
+			}
+			// Get the modal
+			var modal = document.getElementById("recipeModal");
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
