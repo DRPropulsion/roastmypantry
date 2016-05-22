@@ -169,9 +169,9 @@ header {
 }
 
 header {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .second {
@@ -187,9 +187,9 @@ header {
   -webkit-animation-duration:1s;
   -moz-animation-duration:1s;
   animation-duration:1s;
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 
 
