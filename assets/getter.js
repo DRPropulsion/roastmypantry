@@ -17,7 +17,11 @@ function checkForEnter() {
 		addToList();
 		document.getElementById("inputBox").placeholder = "";
 	}
-	else if (event.keyCode == 27)
+}
+
+//checks to see if the keypress is escape
+function checkESC() {
+	if (event.keyCode == 27)
 	{
 		closeResults();
 	}
