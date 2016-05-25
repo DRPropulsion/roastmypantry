@@ -13,11 +13,11 @@
 	</head>
 	<body>		
 		<div id="recipeModal" class="modal" onkeydown="checkESC()">
-			<div class="modal-content">
+			<div class="modal-content" onkeydown="checkESC()">
 				<!--<p> hello this is a test </p>-->
 				<span class="close" onclick="closeResults()">X</span>
-				<p id="postedlist"></p>
-				<ul id="recipelist"></ul>
+				<p id="postedlist" onkeydown="checkESC()"></p>
+				<ul id="recipelist" onkeydown="checkESC()"></ul>
 			</div>
 		</div>
 	
