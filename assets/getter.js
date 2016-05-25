@@ -17,6 +17,10 @@ function checkForEnter() {
 		addToList();
 		document.getElementById("inputBox").placeholder = "";
 	}
+	else if (event.keyCode == 27)
+	{
+		closeResults();
+	}
 }
 
 //adds object to pantry list
