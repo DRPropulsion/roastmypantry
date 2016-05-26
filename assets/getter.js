@@ -145,8 +145,8 @@ $(document).ready(function() {
 				for (var i = 0; i < data["recipes"].length; i++) {
 					var socrank = Math.floor(100 * data["recipes"][i]["social_rank"])/100.0;
 					parseddata += ('<li class="recipe">'
-								+'<a href="'+data["recipes"][i]["source_url"]+'"><img src="'+data["recipes"][i]["image_url"]+'"></img></a>'
-								+'<span><h1 class="recipeh1"><a href="'+data["recipes"][i]["source_url"]+'">'+data["recipes"][i]["title"]+'</a></h1>'
+								+'<a href="'+data["recipes"][i]["f2f_url"]+'"><img src="'+data["recipes"][i]["image_url"]+'"></img></a>'
+								+'<span><h1 class="recipeh1"><a href="'+data["recipes"][i]["f2f_url"]+'">'+data["recipes"][i]["title"]+'</a></h1>'
 								+'<h2 class="recipeh2"><a href="'+data["recipes"][i]["publisher_url"]+'">from '+data["recipes"][i]["publisher"]+'</a></h2>'
 								+'<h3>Social Rank  </h3>'
 								+'<span class="rank">'+socrank+'</span></span>'
