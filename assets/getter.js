@@ -72,8 +72,6 @@ $(document).ready(function() {
 		var unparsedingredientsquery = listofingredients.split(('</span></li><li><span class="libg" onclick="remove(this)">')); //fenceposted html info of each ingredient
 		var ingredientquery = "";
 		var postedingredients = "<p>You searched for: ";
-		console.log(listofingredients);
-		console.log(unparsedingredientsquery);
 		for (var i = 0; i < unparsedingredientsquery.length; i++) {
 			if (i === unparsedingredientsquery.length - 1) {
 				var item = unparsedingredientsquery[i];	//last one: has closing tags at end
@@ -107,8 +105,8 @@ $(document).ready(function() {
 				for (var i = 0; i < data["recipes"].length; i++) {
 					var socrank = Math.floor(100 * data["recipes"][i]["social_rank"])/100.0;
 					parseddata += ('<li class="recipe">'
-								+'<a href="'+data["recipes"][i]["f2f_url"]+'"><img src="'+data["recipes"][i]["image_url"]+'"></img></a>'
 								+'<span><h1 class="recipeh1"><a href="'+data["recipes"][i]["f2f_url"]+'">'+data["recipes"][i]["title"]+'</a></h1>'
+								+'<a href="'+data["recipes"][i]["f2f_url"]+'"><img src="'+data["recipes"][i]["image_url"]+'"></img></a>'
 								+'<h2 class="recipeh2"><a href="'+data["recipes"][i]["publisher_url"]+'">from '+data["recipes"][i]["publisher"]+'</a></h2>'
 								+'<h3>Social Rank  </h3>'
 								+'<span class="rank">'+socrank+'</span></span>'
